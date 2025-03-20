@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout">
+
+    <!--Barrier between the switch button and the kitten image -->
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/topBarrier"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="btnSwitchToRelative"
+        android:layout_height="0dp"
+        android:layout_width="0dp"/>
+
+    <!-- Group for all buttons -->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/buttonGroup"
+        app:constraint_referenced_ids="btnSwitchToRelative, btnMoveKitten"
+        android:layout_height="0dp"
+        android:layout_width="0dp"/>
+
+    <!-- Button to Switch to RelativeLayout -->
+    <Button
+        android:id="@+id/btnSwitchToRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch to Relative Layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/text"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_button"
+        android:padding="15dp" />
+
+    <!--Kitten Image (part of a chain with the description) -->
+    <ImageView
+        android:id="@+id/kittenImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/maxresdefault"
+        app:layout_constraintTop_toBottomOf="@id/topBarrier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!--Image Description (chained with the image) -->
+    <TextView
+        android:id="@+id/imgDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/img_description"
+        app:layout_constraintTop_toBottomOf="@id/kittenImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:textSize="18sp" />
+
+    <!-- Button to Move Kitten -->
+    <Button
+        android:id="@+id/btnMoveKitten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Move Objects"
+        app:layout_constraintTop_toBottomOf="@id/imgDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/text"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_button"
+        android:padding="15dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
