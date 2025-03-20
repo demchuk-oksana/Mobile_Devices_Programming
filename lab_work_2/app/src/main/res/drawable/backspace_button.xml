@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- First Layer: Button Shape -->
+    <item>
+        <shape >
+            <size  android:width="60dp" android:height="60dp" />
+            <solid android:color="@color/button_color" />
+            <corners android:radius="100dp" />
+            <stroke android:color="@color/button_border" android:width="5dp" /> <!-- Border color and width -->
+        </shape>
+    </item>
+    <!-- Second Layer: Backspace Icon -->
+    <item
+        android:drawable="@drawable/backspace"
+        android:gravity="center">
+    </item>
+
+</layer-list>
