@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Layouts and Views</string>
+    <string name="app_name">Table Layout</string>
     <string name="description">Below are some examples of types of android layouts:</string>
     <string name="img_description">Kitten is here!</string>"
 </resources>

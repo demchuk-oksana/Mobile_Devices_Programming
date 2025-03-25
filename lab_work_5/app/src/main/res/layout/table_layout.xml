@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:background="@android:color/background_light"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Table Layout example"
+        app:layout_constraintTop_toTopOf="@id/constraintLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/inter_font"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue"
+        android:background="@drawable/blue_background"
+        />
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="30dp"
+        android:stretchColumns="*"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow"
+            >
+
+            <TextView
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/blue_background"
+                android:fontFamily="@font/inter_font"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:text="Cats"
+                android:textColor="@color/dark_blue"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="@drawable/blue_background"
+                android:fontFamily="@font/inter_font"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:text="Dogs"
+                android:textColor="@color/dark_blue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+            
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:background="@drawable/blue_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kitten1"
+                android:adjustViewBounds="true"
+                android:maxWidth="50dp"
+                android:maxHeight="170dp"
+                android:scaleType="fitCenter"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"
+                />
+
+            <ImageView
+                android:background="@drawable/blue_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dog1"
+                android:adjustViewBounds="true"
+                android:maxWidth="50dp"
+                android:maxHeight="170dp"
+                android:scaleType="fitCenter"
+                android:paddingVertical="10dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"
+                android:paddingHorizontal="10dp"
+                />
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:background="@drawable/blue_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kitten3"
+                android:adjustViewBounds="true"
+                android:maxWidth="50dp"
+                android:maxHeight="170dp"
+                android:scaleType="fitCenter"
+                android:paddingVertical="10dp"
+                android:layout_marginRight="6dp"
+                android:paddingHorizontal="10dp"
+                />
+            <ImageView
+                android:background="@drawable/blue_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dog2"
+                android:adjustViewBounds="true"
+                android:maxWidth="50dp"
+                android:maxHeight="170dp"
+                android:scaleType="fitCenter"
+                android:paddingVertical="10dp"
+                android:layout_marginRight="6dp"
+                android:paddingHorizontal="10dp"
+                />
+            
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnSwitchToGrid"
+        android:textSize="15sp"
+        android:fontFamily="@font/inter_font"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch to Grid Layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnAddColumn"
+        app:layout_constraintTop_toBottomOf="@id/tablelayout"
+        android:textColor="@color/dark_blue"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/blue_background"
+        android:padding="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnAddColumn"
+        android:textSize="15sp"
+        android:fontFamily="@font/inter_font"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new column"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tablelayout"
+        app:layout_constraintLeft_toRightOf="@id/btnSwitchToGrid"
+        android:textColor="@color/dark_blue"
+        android:layout_marginTop="60dp"
+
+        android:background="@drawable/blue_background"
+        android:padding="12dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
