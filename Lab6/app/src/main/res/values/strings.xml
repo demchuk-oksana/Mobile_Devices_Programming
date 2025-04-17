@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">List View Layout</string>
+    <string name="description"> Choose an animal from the list! </string>
+    <string name="img_description"> </string>"
+</resources>
