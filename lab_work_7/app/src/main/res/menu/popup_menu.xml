@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_cats"
+        android:title="@string/cats" />
+    <item
+        android:id="@+id/menu_dogs"
+        android:title="@string/dogs" />
+    <item
+        android:id="@+id/menu_birds"
+        android:title="@string/birds" />
+    <item
+        android:id="@+id/menu_rabbits"
+        android:title="@string/rabbits" />
+    <item
+        android:id="@+id/menu_hamsters"
+        android:title="@string/hamsters" />
+</menu>

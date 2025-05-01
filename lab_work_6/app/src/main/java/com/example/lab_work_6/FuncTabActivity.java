@@ -65,7 +65,7 @@ public class FuncTabActivity extends AppCompatActivity {
             ArrayList<Entry> entries = new ArrayList<>();
 
             for (double x = start; x <= end; x += step) {
-                double y = Math.sin(x); // You can replace this with any function
+                double y = Math.sin(x);
                 tableData.add(String.format("x = %.2f", x));
                 tableData.add(String.format("y = %.2f", y));
                 entries.add(new Entry((float) x, (float) y));

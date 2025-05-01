@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/context_delete"
+        android:title="@string/delete" />
+    <item
+        android:id="@+id/context_increase_size"
+        android:title="@string/increase_size" />
+    <item
+        android:id="@+id/context_decrease_size"
+        android:title="@string/decrease_size" />
+</menu>

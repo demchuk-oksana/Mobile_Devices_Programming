@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selected">Вибрано</string>
+    <string name="app_name"></string>
+    <string name="animal_image">Зображення тварини</string>
+    <string name="select_action">Виберіть дію</string>
+    <string name="select_animal">Вибрати тварину</string>
+    <string name="delete">Видалити</string>
+    <string name="increase_size">Збільшити розмір</string>
+    <string name="decrease_size">Зменшити розмір</string>
+    <string name="restore_images">Відновити всі зображення</string>
+    <string name="delete_all">Видалити всі зображення</string>
+    <string name="change_language">Змінити мову</string>
+    <string name="cats">Коти</string>
+    <string name="dogs">Собаки</string>
+    <string name="birds">Птахи</string>
+    <string name="rabbits">Кролики</string>
+    <string name="hamsters">Хом\'яки</string>
+    <string name="images_restored">Всі зображення відновлені</string>
+    <string name="images_deleted">Всі зображення видалені</string>
+    <string name="language_changed">Мову змінено на українську</string>
+    <string name="language_changed_en">Language changed to English</string>
+</resources>

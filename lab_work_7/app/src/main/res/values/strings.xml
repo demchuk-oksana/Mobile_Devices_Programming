@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"></string>
+    <string name="animal_image">Animal Image</string>
+    <string name="select_action">Select Action</string>
+    <string name="select_animal">Select Animal</string>
+    <string name="delete">Delete</string>
+    <string name="increase_size">Increase Size</string>
+    <string name="decrease_size">Decrease Size</string>
+    <string name="restore_images">Restore All Images</string>
+    <string name="delete_all">Delete All Images</string>
+    <string name="change_language">Change Language</string>
+    <string name="cats">Cats</string>
+    <string name="dogs">Dogs</string>
+    <string name="birds">Birds</string>
+    <string name="rabbits">Rabbits</string>
+    <string name="hamsters">Hamsters</string>
+    <string name="images_restored">All images restored</string>
+    <string name="images_deleted">All images deleted</string>
+    <string name="language_changed">Мову змінено на українську</string>
+    <string name="language_changed_en">Language changed to English</string>
+    <string name="selected">Selected</string>
+</resources>
