@@ -147,6 +147,11 @@ public class MainActivity extends AppCompatActivity {
             mode.setTitle(getString(R.string.selected));
             MenuInflater inflater = mode.getMenuInflater();
             inflater.inflate(R.menu.cab_menu, menu);
+
+            // Приховуємо тулбар
+            Toolbar toolbar = findViewById(R.id.toolbar);
+            toolbar.setVisibility(View.GONE);
+
             return true;
         }
 
@@ -192,6 +197,10 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onDestroyActionMode(ActionMode mode) {
+            // Відновлюємо видимість тулбара
+            Toolbar toolbar = findViewById(R.id.toolbar);
+            toolbar.setVisibility(View.VISIBLE);
+
             for (ImageView image : selectedImages) {
                 image.setAlpha(1.0f);
             }
